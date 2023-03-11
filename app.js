@@ -7,7 +7,7 @@ const d2 = document.querySelector(".sec");
 const d3 = document.querySelector(".min");
 const d4 = document.querySelector(".hrs");
 
-let hr="0"+0,min="0"+0,sec="0"+0,milli="0"+0;
+let hr="00",min="00",sec="00",milli="00";
 let startTime;
 
 function display(){
@@ -47,7 +47,7 @@ stop.addEventListener('click',()=>{
 
 reset.addEventListener('click',()=>{
     clearInterval(startTime)
-    hr=min=sec=milli="0"+0;
+    hr=min=sec=milli="0";
     display();
 });
 
